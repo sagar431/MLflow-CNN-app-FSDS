@@ -21,3 +21,569 @@ Connection: close
 [2022-07-07 11:35:23,253: INFO: common]: extracted data\data.zip to data
 [2022-07-07 11:35:23,264: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
 
+[2022-07-07 12:02:00,947: INFO: stage_01_get_data]: 
+********************
+[2022-07-07 12:02:00,947: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-07-07 12:02:00,947: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-07 12:02:00,947: INFO: common]: created directory at: data
+[2022-07-07 12:02:00,947: INFO: stage_01_get_data]: filename:data.zip already present
+[2022-07-07 12:02:00,947: INFO: common]: created directory at: data
+[2022-07-07 12:02:00,947: INFO: common]: extraction started...
+[2022-07-07 12:02:19,446: INFO: common]: extracted data\data.zip to data
+[2022-07-07 12:02:19,462: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
+[2022-07-07 12:03:15,789: INFO: stage_01_get_data]: 
+********************
+[2022-07-07 12:03:15,789: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-07-07 12:03:15,789: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-07 12:03:15,789: INFO: common]: created directory at: data
+[2022-07-07 12:03:15,789: INFO: stage_01_get_data]: filename:data.zip already present
+[2022-07-07 12:03:15,789: INFO: common]: created directory at: data
+[2022-07-07 12:03:15,789: INFO: common]: extraction started...
+[2022-07-07 12:03:33,915: INFO: common]: extracted data\data.zip to data
+[2022-07-07 12:03:33,915: INFO: common]: created directory at: data\bad_data
+[2022-07-07 12:03:33,925: ERROR: stage_01_get_data]: [WinError 3] The system cannot find the path specified: 'data\\PetIamges'
+Traceback (most recent call last):
+  File "src/stage_01_get_data.py", line 55, in <module>
+    main(config_path=parsed_args.config)
+  File "src/stage_01_get_data.py", line 45, in main
+    validate_image(config)
+  File "d:\mlops\mlflow-cnn-app-fsds\src\utils\data_mgmt.py", line 17, in validate_image
+    for dirs in os.listdir(PARENT_DIR):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'data\\PetIamges'
+[2022-07-07 12:07:34,039: INFO: stage_01_get_data]: 
+********************
+[2022-07-07 12:07:34,039: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-07-07 12:07:34,039: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-07 12:07:34,047: INFO: common]: created directory at: data
+[2022-07-07 12:07:34,047: INFO: stage_01_get_data]: filename:data.zip already present
+[2022-07-07 12:07:34,047: INFO: common]: created directory at: data
+[2022-07-07 12:07:34,047: INFO: common]: extraction started...
+[2022-07-07 12:07:51,079: INFO: common]: extracted data\data.zip to data
+[2022-07-07 12:07:51,087: INFO: common]: created directory at: data\bad_data
+[2022-07-07 12:07:51,465: INFO: data_mgmt]: data\PetImages\Cat\10073.jpg not of expected format
+[2022-07-07 12:07:51,691: INFO: data_mgmt]: data\PetImages\Cat\10125.jpg not of expected format
+[2022-07-07 12:07:53,125: INFO: data_mgmt]: data\PetImages\Cat\10404.jpg not of expected format
+[2022-07-07 12:07:53,566: INFO: data_mgmt]: data\PetImages\Cat\10501.jpg not of expected format
+[2022-07-07 12:07:55,044: INFO: data_mgmt]: data\PetImages\Cat\10820.jpg not of expected format
+[2022-07-07 12:07:55,290: INFO: data_mgmt]: data\PetImages\Cat\10874.jpg not of expected format
+[2022-07-07 12:07:56,233: INFO: data_mgmt]: data\PetImages\Cat\11083.jpg not of expected format
+[2022-07-07 12:07:56,249: INFO: data_mgmt]: data\PetImages\Cat\11086.jpg not of expected format
+[2022-07-07 12:07:56,273: INFO: data_mgmt]: data\PetImages\Cat\11091.jpg not of expected format
+[2022-07-07 12:07:56,289: INFO: data_mgmt]: data\PetImages\Cat\11095.jpg not of expected format
+[2022-07-07 12:07:56,697: INFO: data_mgmt]: data\PetImages\Cat\11196.jpg not of expected format
+[2022-07-07 12:07:56,753: INFO: data_mgmt]: data\PetImages\Cat\11210.jpg not of expected format
+[2022-07-07 12:07:57,537: INFO: data_mgmt]: data\PetImages\Cat\11397.jpg not of expected format
+[2022-07-07 12:07:58,001: INFO: data_mgmt]: data\PetImages\Cat\1151.jpg not of expected format
+[2022-07-07 12:07:58,241: INFO: data_mgmt]: data\PetImages\Cat\11565.jpg not of expected format
+[2022-07-07 12:07:58,401: INFO: data_mgmt]: data\PetImages\Cat\11602.jpg not of expected format
+[2022-07-07 12:07:59,074: INFO: data_mgmt]: data\PetImages\Cat\11729.jpg not of expected format
+[2022-07-07 12:07:59,826: INFO: data_mgmt]: data\PetImages\Cat\11864.jpg not of expected format
+[2022-07-07 12:07:59,882: INFO: data_mgmt]: data\PetImages\Cat\11874.jpg not of expected format
+[2022-07-07 12:08:00,202: INFO: data_mgmt]: data\PetImages\Cat\11935.jpg not of expected format
+[2022-07-07 12:08:01,107: INFO: data_mgmt]: data\PetImages\Cat\12080.jpg not of expected format
+[2022-07-07 12:08:02,164: INFO: data_mgmt]: data\PetImages\Cat\12235.jpg not of expected format
+[2022-07-07 12:08:02,390: INFO: data_mgmt]: data\PetImages\Cat\12269.jpg not of expected format
+[2022-07-07 12:08:03,060: INFO: data_mgmt]: data\PetImages\Cat\12370.jpg not of expected format
+[2022-07-07 12:08:03,960: INFO: data_mgmt]: data\PetImages\Cat\1267.jpg not of expected format
+[2022-07-07 12:08:04,716: INFO: data_mgmt]: data\PetImages\Cat\1386.jpg not of expected format
+[2022-07-07 12:08:04,798: INFO: data_mgmt]: data\PetImages\Cat\140.jpg not of expected format
+[2022-07-07 12:08:05,226: INFO: data_mgmt]: data\PetImages\Cat\1476.jpg not of expected format
+[2022-07-07 12:08:05,260: INFO: data_mgmt]: data\PetImages\Cat\1483.jpg not of expected format
+[2022-07-07 12:08:06,562: INFO: data_mgmt]: data\PetImages\Cat\1757.jpg not of expected format
+[2022-07-07 12:08:06,810: INFO: data_mgmt]: data\PetImages\Cat\1815.jpg not of expected format
+[2022-07-07 12:08:07,300: INFO: data_mgmt]: data\PetImages\Cat\1914.jpg not of expected format
+[2022-07-07 12:08:07,401: INFO: data_mgmt]: data\PetImages\Cat\1936.jpg not of expected format
+[2022-07-07 12:08:07,401: INFO: data_mgmt]: data\PetImages\Cat\1937.jpg not of expected format
+[2022-07-07 12:08:07,770: INFO: data_mgmt]: data\PetImages\Cat\2021.jpg not of expected format
+[2022-07-07 12:08:08,118: INFO: data_mgmt]: data\PetImages\Cat\2101.jpg not of expected format
+[2022-07-07 12:08:08,518: INFO: data_mgmt]: data\PetImages\Cat\2189.jpg not of expected format
+[2022-07-07 12:08:09,011: INFO: data_mgmt]: data\PetImages\Cat\23.jpg not of expected format
+[2022-07-07 12:08:10,521: INFO: data_mgmt]: data\PetImages\Cat\2569.jpg not of expected format
+[2022-07-07 12:08:11,293: INFO: data_mgmt]: data\PetImages\Cat\2663.jpg not of expected format
+[2022-07-07 12:08:11,838: INFO: data_mgmt]: data\PetImages\Cat\2742.jpg not of expected format
+[2022-07-07 12:08:13,308: INFO: data_mgmt]: data\PetImages\Cat\2939.jpg not of expected format
+[2022-07-07 12:08:13,995: INFO: data_mgmt]: data\PetImages\Cat\3089.jpg not of expected format
+[2022-07-07 12:08:14,311: INFO: data_mgmt]: data\PetImages\Cat\3153.jpg not of expected format
+[2022-07-07 12:08:14,361: INFO: data_mgmt]: data\PetImages\Cat\3161.jpg not of expected format
+[2022-07-07 12:08:14,531: INFO: data_mgmt]: data\PetImages\Cat\3197.jpg not of expected format
+[2022-07-07 12:08:15,241: INFO: data_mgmt]: data\PetImages\Cat\3300.jpg not of expected format
+[2022-07-07 12:08:16,969: INFO: data_mgmt]: data\PetImages\Cat\3491.jpg not of expected format
+[2022-07-07 12:08:17,941: INFO: data_mgmt]: data\PetImages\Cat\3649.jpg not of expected format
+[2022-07-07 12:08:18,312: INFO: data_mgmt]: data\PetImages\Cat\3710.jpg not of expected format
+[2022-07-07 12:08:19,534: INFO: data_mgmt]: data\PetImages\Cat\391.jpg not of expected format
+[2022-07-07 12:08:20,060: INFO: data_mgmt]: data\PetImages\Cat\3967.jpg not of expected format
+[2022-07-07 12:08:20,403: INFO: data_mgmt]: data\PetImages\Cat\4000.jpg not of expected format
+[2022-07-07 12:08:21,381: INFO: data_mgmt]: data\PetImages\Cat\4165.jpg not of expected format
+[2022-07-07 12:08:22,161: INFO: data_mgmt]: data\PetImages\Cat\4293.jpg not of expected format
+[2022-07-07 12:08:22,371: INFO: data_mgmt]: data\PetImages\Cat\4322.jpg not of expected format
+[2022-07-07 12:08:22,454: INFO: data_mgmt]: data\PetImages\Cat\4334.jpg not of expected format
+[2022-07-07 12:08:22,560: INFO: data_mgmt]: data\PetImages\Cat\4351.jpg not of expected format
+[2022-07-07 12:08:23,151: INFO: data_mgmt]: data\PetImages\Cat\445.jpg not of expected format
+[2022-07-07 12:08:24,255: INFO: data_mgmt]: data\PetImages\Cat\4629.jpg not of expected format
+[2022-07-07 12:08:25,013: INFO: data_mgmt]: data\PetImages\Cat\4750.jpg not of expected format
+[2022-07-07 12:08:25,431: INFO: data_mgmt]: data\PetImages\Cat\4821.jpg not of expected format
+[2022-07-07 12:08:25,501: INFO: data_mgmt]: data\PetImages\Cat\4833.jpg not of expected format
+[2022-07-07 12:08:25,770: INFO: data_mgmt]: data\PetImages\Cat\4874.jpg not of expected format
+[2022-07-07 12:08:26,117: INFO: data_mgmt]: data\PetImages\Cat\4929.jpg not of expected format
+[2022-07-07 12:08:27,026: INFO: data_mgmt]: data\PetImages\Cat\5077.jpg not of expected format
+[2022-07-07 12:08:27,101: INFO: data_mgmt]: data\PetImages\Cat\5089.jpg not of expected format
+[2022-07-07 12:08:29,353: INFO: data_mgmt]: data\PetImages\Cat\5370.jpg not of expected format
+[2022-07-07 12:08:31,092: INFO: data_mgmt]: data\PetImages\Cat\5553.jpg not of expected format
+[2022-07-07 12:08:31,674: INFO: data_mgmt]: data\PetImages\Cat\5614.jpg not of expected format
+[2022-07-07 12:08:32,094: INFO: data_mgmt]: data\PetImages\Cat\5686.jpg not of expected format
+[2022-07-07 12:08:32,909: INFO: data_mgmt]: data\PetImages\Cat\5819.jpg not of expected format
+[2022-07-07 12:08:34,192: INFO: data_mgmt]: data\PetImages\Cat\6029.jpg not of expected format
+[2022-07-07 12:08:36,271: INFO: data_mgmt]: data\PetImages\Cat\6376.jpg not of expected format
+[2022-07-07 12:08:36,613: INFO: data_mgmt]: data\PetImages\Cat\6435.jpg not of expected format
+[2022-07-07 12:08:36,638: INFO: data_mgmt]: data\PetImages\Cat\6438.jpg not of expected format
+[2022-07-07 12:08:36,923: INFO: data_mgmt]: data\PetImages\Cat\6486.jpg not of expected format
+[2022-07-07 12:08:36,959: INFO: data_mgmt]: data\PetImages\Cat\6491.jpg not of expected format
+[2022-07-07 12:08:37,939: INFO: data_mgmt]: data\PetImages\Cat\660.jpg not of expected format
+[2022-07-07 12:08:38,317: INFO: data_mgmt]: data\PetImages\Cat\666.jpg not of expected format
+[2022-07-07 12:08:38,317: INFO: data_mgmt]: moved bad file from data\PetImages\Cat\666.jpg to data\bad_data\666.jpg
+[2022-07-07 12:08:38,317: ERROR: data_mgmt]: cannot identify image file 'data\\PetImages\\Cat\\666.jpg'
+Traceback (most recent call last):
+  File "d:\mlops\mlflow-cnn-app-fsds\src\utils\data_mgmt.py", line 22, in validate_image
+    img = Image.open(path_to_img)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\PIL\Image.py", line 3148, in open
+    "cannot identify image file %r" % (filename if filename else fp)
+PIL.UnidentifiedImageError: cannot identify image file 'data\\PetImages\\Cat\\666.jpg'
+[2022-07-07 12:08:39,261: INFO: data_mgmt]: data\PetImages\Cat\6768.jpg not of expected format
+[2022-07-07 12:08:40,302: INFO: data_mgmt]: data\PetImages\Cat\6900.jpg not of expected format
+[2022-07-07 12:08:40,342: INFO: data_mgmt]: data\PetImages\Cat\6906.jpg not of expected format
+[2022-07-07 12:08:40,777: INFO: data_mgmt]: data\PetImages\Cat\6980.jpg not of expected format
+[2022-07-07 12:08:40,912: INFO: data_mgmt]: data\PetImages\Cat\7003.jpg not of expected format
+[2022-07-07 12:08:42,358: INFO: data_mgmt]: data\PetImages\Cat\7245.jpg not of expected format
+[2022-07-07 12:08:42,542: INFO: data_mgmt]: data\PetImages\Cat\7276.jpg not of expected format
+[2022-07-07 12:08:43,558: INFO: data_mgmt]: data\PetImages\Cat\7441.jpg not of expected format
+[2022-07-07 12:08:43,842: INFO: data_mgmt]: data\PetImages\Cat\7487.jpg not of expected format
+[2022-07-07 12:08:43,932: INFO: data_mgmt]: data\PetImages\Cat\7502.jpg not of expected format
+[2022-07-07 12:08:44,762: INFO: data_mgmt]: data\PetImages\Cat\7642.jpg not of expected format
+[2022-07-07 12:08:44,791: INFO: data_mgmt]: data\PetImages\Cat\7647.jpg not of expected format
+[2022-07-07 12:08:45,691: INFO: data_mgmt]: data\PetImages\Cat\780.jpg not of expected format
+[2022-07-07 12:08:46,101: INFO: data_mgmt]: data\PetImages\Cat\7845.jpg not of expected format
+[2022-07-07 12:08:47,252: INFO: data_mgmt]: data\PetImages\Cat\7968.jpg not of expected format
+[2022-07-07 12:08:47,347: INFO: data_mgmt]: data\PetImages\Cat\7978.jpg not of expected format
+[2022-07-07 12:08:48,015: INFO: data_mgmt]: data\PetImages\Cat\8054.jpg not of expected format
+[2022-07-07 12:08:48,837: INFO: data_mgmt]: data\PetImages\Cat\8157.jpg not of expected format
+[2022-07-07 12:08:49,016: INFO: data_mgmt]: data\PetImages\Cat\8183.jpg not of expected format
+[2022-07-07 12:08:49,681: INFO: data_mgmt]: data\PetImages\Cat\8295.jpg not of expected format
+[2022-07-07 12:08:49,917: INFO: data_mgmt]: data\PetImages\Cat\8335.jpg not of expected format
+[2022-07-07 12:08:50,412: INFO: data_mgmt]: data\PetImages\Cat\8415.jpg not of expected format
+[2022-07-07 12:08:50,742: INFO: data_mgmt]: data\PetImages\Cat\8470.jpg not of expected format
+[2022-07-07 12:08:50,917: INFO: data_mgmt]: data\PetImages\Cat\850.jpg not of expected format
+[2022-07-07 12:08:51,262: INFO: data_mgmt]: data\PetImages\Cat\8553.jpg not of expected format
+[2022-07-07 12:08:52,981: INFO: data_mgmt]: data\PetImages\Cat\8832.jpg not of expected format
+[2022-07-07 12:08:53,737: INFO: data_mgmt]: data\PetImages\Cat\8958.jpg not of expected format
+[2022-07-07 12:08:54,610: INFO: data_mgmt]: data\PetImages\Cat\910.jpg not of expected format
+[2022-07-07 12:08:54,610: INFO: data_mgmt]: data\PetImages\Cat\9100.jpg not of expected format
+[2022-07-07 12:08:55,036: INFO: data_mgmt]: data\PetImages\Cat\9171.jpg not of expected format
+[2022-07-07 12:08:55,322: INFO: data_mgmt]: data\PetImages\Cat\9208.jpg not of expected format
+[2022-07-07 12:08:55,577: INFO: data_mgmt]: data\PetImages\Cat\925.jpg not of expected format
+[2022-07-07 12:08:56,050: INFO: data_mgmt]: data\PetImages\Cat\9328.jpg not of expected format
+[2022-07-07 12:08:56,232: INFO: data_mgmt]: data\PetImages\Cat\936.jpg not of expected format
+[2022-07-07 12:08:56,242: INFO: data_mgmt]: data\PetImages\Cat\9361.jpg not of expected format
+[2022-07-07 12:08:57,482: INFO: data_mgmt]: data\PetImages\Cat\9565.jpg not of expected format
+[2022-07-07 12:08:57,802: INFO: data_mgmt]: data\PetImages\Cat\9619.jpg not of expected format
+[2022-07-07 12:08:58,842: INFO: data_mgmt]: data\PetImages\Cat\9778.jpg not of expected format
+[2022-07-07 12:09:00,217: INFO: data_mgmt]: data\PetImages\Cat\Thumbs.db not of expected format
+[2022-07-07 12:09:00,217: INFO: data_mgmt]: moved bad file from data\PetImages\Cat\Thumbs.db to data\bad_data\Thumbs.db
+[2022-07-07 12:09:00,217: ERROR: data_mgmt]: cannot identify image file 'data\\PetImages\\Cat\\Thumbs.db'
+Traceback (most recent call last):
+  File "d:\mlops\mlflow-cnn-app-fsds\src\utils\data_mgmt.py", line 22, in validate_image
+    img = Image.open(path_to_img)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\PIL\Image.py", line 3148, in open
+    "cannot identify image file %r" % (filename if filename else fp)
+PIL.UnidentifiedImageError: cannot identify image file 'data\\PetImages\\Cat\\Thumbs.db'
+[2022-07-07 12:09:01,182: INFO: data_mgmt]: data\PetImages\Dog\10158.jpg not of expected format
+[2022-07-07 12:09:01,212: INFO: data_mgmt]: data\PetImages\Dog\10163.jpg not of expected format
+[2022-07-07 12:09:01,252: INFO: data_mgmt]: data\PetImages\Dog\1017.jpg not of expected format
+[2022-07-07 12:09:01,272: INFO: data_mgmt]: data\PetImages\Dog\10173.jpg not of expected format
+[2022-07-07 12:09:02,360: INFO: data_mgmt]: data\PetImages\Dog\10351.jpg not of expected format
+[2022-07-07 12:09:02,382: INFO: data_mgmt]: data\PetImages\Dog\10353.jpg not of expected format
+[2022-07-07 12:09:02,553: INFO: data_mgmt]: data\PetImages\Dog\10383.jpg not of expected format
+[2022-07-07 12:09:02,662: INFO: data_mgmt]: data\PetImages\Dog\10401.jpg not of expected format
+[2022-07-07 12:09:04,072: INFO: data_mgmt]: data\PetImages\Dog\10637.jpg not of expected format
+[2022-07-07 12:09:04,321: INFO: data_mgmt]: data\PetImages\Dog\10678.jpg not of expected format
+[2022-07-07 12:09:04,478: INFO: data_mgmt]: data\PetImages\Dog\10705.jpg not of expected format
+[2022-07-07 12:09:04,604: INFO: data_mgmt]: data\PetImages\Dog\10726.jpg not of expected format
+[2022-07-07 12:09:04,663: INFO: data_mgmt]: data\PetImages\Dog\10733.jpg not of expected format
+[2022-07-07 12:09:04,763: INFO: data_mgmt]: data\PetImages\Dog\10745.jpg not of expected format
+[2022-07-07 12:09:04,773: INFO: data_mgmt]: data\PetImages\Dog\10747.jpg not of expected format
+[2022-07-07 12:09:05,082: INFO: data_mgmt]: data\PetImages\Dog\10797.jpg not of expected format
+[2022-07-07 12:09:05,472: INFO: data_mgmt]: data\PetImages\Dog\10863.jpg not of expected format
+[2022-07-07 12:09:05,733: INFO: data_mgmt]: data\PetImages\Dog\10907.jpg not of expected format
+[2022-07-07 12:09:05,970: INFO: data_mgmt]: data\PetImages\Dog\10949.jpg not of expected format
+[2022-07-07 12:09:06,103: INFO: data_mgmt]: data\PetImages\Dog\10969.jpg not of expected format
+[2022-07-07 12:09:06,128: INFO: data_mgmt]: data\PetImages\Dog\10972.jpg not of expected format
+[2022-07-07 12:09:07,320: INFO: data_mgmt]: data\PetImages\Dog\11166.jpg not of expected format
+[2022-07-07 12:09:07,344: INFO: data_mgmt]: data\PetImages\Dog\1117.jpg not of expected format
+[2022-07-07 12:09:07,713: INFO: data_mgmt]: data\PetImages\Dog\11233.jpg not of expected format
+[2022-07-07 12:09:07,823: INFO: data_mgmt]: data\PetImages\Dog\11253.jpg not of expected format
+[2022-07-07 12:09:08,033: INFO: data_mgmt]: data\PetImages\Dog\11285.jpg not of expected format
+[2022-07-07 12:09:08,893: INFO: data_mgmt]: data\PetImages\Dog\11410.jpg not of expected format
+[2022-07-07 12:09:09,813: INFO: data_mgmt]: data\PetImages\Dog\11560.jpg not of expected format
+[2022-07-07 12:09:10,062: INFO: data_mgmt]: data\PetImages\Dog\11590.jpg not of expected format
+[2022-07-07 12:09:10,812: INFO: data_mgmt]: data\PetImages\Dog\11675.jpg not of expected format
+[2022-07-07 12:09:10,853: INFO: data_mgmt]: data\PetImages\Dog\1168.jpg not of expected format
+[2022-07-07 12:09:10,968: INFO: data_mgmt]: data\PetImages\Dog\11692.jpg not of expected format
+[2022-07-07 12:09:11,058: INFO: data_mgmt]: data\PetImages\Dog\11702.jpg not of expected format
+[2022-07-07 12:09:11,066: INFO: data_mgmt]: moved bad file from data\PetImages\Dog\11702.jpg to data\bad_data\11702.jpg
+[2022-07-07 12:09:11,066: ERROR: data_mgmt]: cannot identify image file 'data\\PetImages\\Dog\\11702.jpg'
+Traceback (most recent call last):
+  File "d:\mlops\mlflow-cnn-app-fsds\src\utils\data_mgmt.py", line 22, in validate_image
+    img = Image.open(path_to_img)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\PIL\Image.py", line 3148, in open
+    "cannot identify image file %r" % (filename if filename else fp)
+PIL.UnidentifiedImageError: cannot identify image file 'data\\PetImages\\Dog\\11702.jpg'
+[2022-07-07 12:09:11,963: INFO: data_mgmt]: data\PetImages\Dog\11849.jpg not of expected format
+[2022-07-07 12:09:11,993: INFO: data_mgmt]: data\PetImages\Dog\11853.jpg not of expected format
+[2022-07-07 12:09:12,343: INFO: data_mgmt]: data\PetImages\Dog\11912.jpg not of expected format
+[2022-07-07 12:09:13,478: INFO: data_mgmt]: data\PetImages\Dog\12102.jpg not of expected format
+[2022-07-07 12:09:13,546: INFO: data_mgmt]: data\PetImages\Dog\12114.jpg not of expected format
+[2022-07-07 12:09:14,604: INFO: data_mgmt]: data\PetImages\Dog\12289.jpg not of expected format
+[2022-07-07 12:09:15,953: INFO: data_mgmt]: data\PetImages\Dog\1259.jpg not of expected format
+[2022-07-07 12:09:16,243: INFO: data_mgmt]: data\PetImages\Dog\1308.jpg not of expected format
+[2022-07-07 12:09:16,529: INFO: data_mgmt]: data\PetImages\Dog\1356.jpg not of expected format
+[2022-07-07 12:09:18,985: INFO: data_mgmt]: data\PetImages\Dog\1773.jpg not of expected format
+[2022-07-07 12:09:19,080: INFO: data_mgmt]: data\PetImages\Dog\1789.jpg not of expected format
+[2022-07-07 12:09:19,530: INFO: data_mgmt]: data\PetImages\Dog\1866.jpg not of expected format
+[2022-07-07 12:09:19,650: INFO: data_mgmt]: data\PetImages\Dog\1884.jpg not of expected format
+[2022-07-07 12:09:19,783: INFO: data_mgmt]: data\PetImages\Dog\1900.jpg not of expected format
+[2022-07-07 12:09:22,713: INFO: data_mgmt]: data\PetImages\Dog\2317.jpg not of expected format
+[2022-07-07 12:09:22,843: INFO: data_mgmt]: data\PetImages\Dog\2339.jpg not of expected format
+[2022-07-07 12:09:22,933: INFO: data_mgmt]: data\PetImages\Dog\2353.jpg not of expected format
+[2022-07-07 12:09:23,102: INFO: data_mgmt]: data\PetImages\Dog\2384.jpg not of expected format
+[2022-07-07 12:09:23,693: INFO: data_mgmt]: data\PetImages\Dog\2479.jpg not of expected format
+[2022-07-07 12:09:23,783: INFO: data_mgmt]: data\PetImages\Dog\2494.jpg not of expected format
+[2022-07-07 12:09:24,989: INFO: data_mgmt]: data\PetImages\Dog\2688.jpg not of expected format
+[2022-07-07 12:09:26,154: INFO: data_mgmt]: data\PetImages\Dog\2877.jpg not of expected format
+[2022-07-07 12:09:26,353: INFO: data_mgmt]: data\PetImages\Dog\2905.jpg not of expected format
+[2022-07-07 12:09:26,429: INFO: data_mgmt]: data\PetImages\Dog\2915.jpg not of expected format
+[2022-07-07 12:09:26,683: INFO: data_mgmt]: data\PetImages\Dog\296.jpg not of expected format
+[2022-07-07 12:09:27,234: INFO: data_mgmt]: data\PetImages\Dog\3038.jpg not of expected format
+[2022-07-07 12:09:27,813: INFO: data_mgmt]: data\PetImages\Dog\3136.jpg not of expected format
+[2022-07-07 12:09:27,937: INFO: data_mgmt]: data\PetImages\Dog\3155.jpg not of expected format
+[2022-07-07 12:09:28,514: INFO: data_mgmt]: data\PetImages\Dog\3252.jpg not of expected format
+[2022-07-07 12:09:28,709: INFO: data_mgmt]: data\PetImages\Dog\3288.jpg not of expected format
+[2022-07-07 12:09:28,908: INFO: data_mgmt]: data\PetImages\Dog\3320.jpg not of expected format
+[2022-07-07 12:09:30,424: INFO: data_mgmt]: data\PetImages\Dog\3546.jpg not of expected format
+[2022-07-07 12:09:30,663: INFO: data_mgmt]: data\PetImages\Dog\3588.jpg not of expected format
+[2022-07-07 12:09:32,123: INFO: data_mgmt]: data\PetImages\Dog\3823.jpg not of expected format
+[2022-07-07 12:09:32,483: INFO: data_mgmt]: data\PetImages\Dog\3885.jpg not of expected format
+[2022-07-07 12:09:32,799: INFO: data_mgmt]: data\PetImages\Dog\3927.jpg not of expected format
+[2022-07-07 12:09:34,174: INFO: data_mgmt]: data\PetImages\Dog\4086.jpg not of expected format
+[2022-07-07 12:09:34,624: INFO: data_mgmt]: data\PetImages\Dog\4134.jpg not of expected format
+[2022-07-07 12:09:34,684: INFO: data_mgmt]: data\PetImages\Dog\414.jpg not of expected format
+[2022-07-07 12:09:35,093: INFO: data_mgmt]: data\PetImages\Dog\4203.jpg not of expected format
+[2022-07-07 12:09:35,514: INFO: data_mgmt]: data\PetImages\Dog\4257.jpg not of expected format
+[2022-07-07 12:09:35,783: INFO: data_mgmt]: data\PetImages\Dog\4301.jpg not of expected format
+[2022-07-07 12:09:36,169: INFO: data_mgmt]: data\PetImages\Dog\4367.jpg not of expected format
+[2022-07-07 12:09:37,084: INFO: data_mgmt]: data\PetImages\Dog\4515.jpg not of expected format
+[2022-07-07 12:09:37,854: INFO: data_mgmt]: data\PetImages\Dog\4640.jpg not of expected format
+[2022-07-07 12:09:37,954: INFO: data_mgmt]: data\PetImages\Dog\4654.jpg not of expected format
+[2022-07-07 12:09:39,382: INFO: data_mgmt]: data\PetImages\Dog\4855.jpg not of expected format
+[2022-07-07 12:09:39,784: INFO: data_mgmt]: data\PetImages\Dog\4924.jpg not of expected format
+[2022-07-07 12:09:40,237: INFO: data_mgmt]: data\PetImages\Dog\50.jpg not of expected format
+[2022-07-07 12:09:40,914: INFO: data_mgmt]: data\PetImages\Dog\5104.jpg not of expected format
+[2022-07-07 12:09:41,614: INFO: data_mgmt]: data\PetImages\Dog\522.jpg not of expected format
+[2022-07-07 12:09:41,754: INFO: data_mgmt]: data\PetImages\Dog\5243.jpg not of expected format
+[2022-07-07 12:09:41,864: INFO: data_mgmt]: data\PetImages\Dog\5263.jpg not of expected format
+[2022-07-07 12:09:42,984: INFO: data_mgmt]: data\PetImages\Dog\543.jpg not of expected format
+[2022-07-07 12:09:44,114: INFO: data_mgmt]: data\PetImages\Dog\5547.jpg not of expected format
+[2022-07-07 12:09:44,649: INFO: data_mgmt]: data\PetImages\Dog\5604.jpg not of expected format
+[2022-07-07 12:09:44,684: INFO: data_mgmt]: data\PetImages\Dog\561.jpg not of expected format
+[2022-07-07 12:09:44,734: INFO: data_mgmt]: data\PetImages\Dog\5618.jpg not of expected format
+[2022-07-07 12:09:44,934: INFO: data_mgmt]: data\PetImages\Dog\565.jpg not of expected format
+[2022-07-07 12:09:45,426: INFO: data_mgmt]: data\PetImages\Dog\573.jpg not of expected format
+[2022-07-07 12:09:45,442: INFO: data_mgmt]: data\PetImages\Dog\5730.jpg not of expected format
+[2022-07-07 12:09:45,464: INFO: data_mgmt]: data\PetImages\Dog\5736.jpg not of expected format
+[2022-07-07 12:09:45,793: INFO: data_mgmt]: data\PetImages\Dog\5790.jpg not of expected format
+[2022-07-07 12:09:45,833: INFO: data_mgmt]: data\PetImages\Dog\5797.jpg not of expected format
+[2022-07-07 12:09:46,794: INFO: data_mgmt]: data\PetImages\Dog\5955.jpg not of expected format
+[2022-07-07 12:09:47,344: INFO: data_mgmt]: data\PetImages\Dog\6032.jpg not of expected format
+[2022-07-07 12:09:47,534: INFO: data_mgmt]: data\PetImages\Dog\6059.jpg not of expected format
+[2022-07-07 12:09:47,714: INFO: data_mgmt]: data\PetImages\Dog\6086.jpg not of expected format
+[2022-07-07 12:09:48,594: INFO: data_mgmt]: data\PetImages\Dog\6213.jpg not of expected format
+[2022-07-07 12:09:48,745: INFO: data_mgmt]: data\PetImages\Dog\6238.jpg not of expected format
+[2022-07-07 12:09:48,786: INFO: data_mgmt]: data\PetImages\Dog\6245.jpg not of expected format
+[2022-07-07 12:09:49,178: INFO: data_mgmt]: data\PetImages\Dog\6305.jpg not of expected format
+[2022-07-07 12:09:49,255: INFO: data_mgmt]: data\PetImages\Dog\6318.jpg not of expected format
+[2022-07-07 12:09:49,924: INFO: data_mgmt]: data\PetImages\Dog\6430.jpg not of expected format
+[2022-07-07 12:09:50,304: INFO: data_mgmt]: data\PetImages\Dog\6500.jpg not of expected format
+[2022-07-07 12:09:50,314: INFO: data_mgmt]: data\PetImages\Dog\6503.jpg not of expected format
+[2022-07-07 12:09:50,610: INFO: data_mgmt]: data\PetImages\Dog\6555.jpg not of expected format
+[2022-07-07 12:09:50,994: INFO: data_mgmt]: data\PetImages\Dog\663.jpg not of expected format
+[2022-07-07 12:09:51,450: INFO: data_mgmt]: data\PetImages\Dog\6718.jpg not of expected format
+[2022-07-07 12:09:52,174: INFO: data_mgmt]: data\PetImages\Dog\6855.jpg not of expected format
+[2022-07-07 12:09:52,464: INFO: data_mgmt]: data\PetImages\Dog\6904.jpg not of expected format
+[2022-07-07 12:09:53,512: INFO: data_mgmt]: data\PetImages\Dog\7083.jpg not of expected format
+[2022-07-07 12:09:53,722: INFO: data_mgmt]: data\PetImages\Dog\7112.jpg not of expected format
+[2022-07-07 12:09:53,820: INFO: data_mgmt]: data\PetImages\Dog\7128.jpg not of expected format
+[2022-07-07 12:09:53,850: INFO: data_mgmt]: data\PetImages\Dog\7133.jpg not of expected format
+[2022-07-07 12:09:54,202: INFO: data_mgmt]: data\PetImages\Dog\719.jpg not of expected format
+[2022-07-07 12:09:54,935: INFO: data_mgmt]: data\PetImages\Dog\7311.jpg not of expected format
+[2022-07-07 12:09:55,355: INFO: data_mgmt]: data\PetImages\Dog\7369.jpg not of expected format
+[2022-07-07 12:09:55,994: INFO: data_mgmt]: data\PetImages\Dog\7459.jpg not of expected format
+[2022-07-07 12:09:56,200: INFO: data_mgmt]: data\PetImages\Dog\7496.jpg not of expected format
+[2022-07-07 12:09:56,318: INFO: data_mgmt]: data\PetImages\Dog\7514.jpg not of expected format
+[2022-07-07 12:09:57,189: INFO: data_mgmt]: data\PetImages\Dog\7652.jpg not of expected format
+[2022-07-07 12:09:57,574: INFO: data_mgmt]: data\PetImages\Dog\7718.jpg not of expected format
+[2022-07-07 12:09:57,642: INFO: data_mgmt]: data\PetImages\Dog\7729.jpg not of expected format
+[2022-07-07 12:09:57,699: INFO: data_mgmt]: data\PetImages\Dog\7739.jpg not of expected format
+[2022-07-07 12:09:57,724: INFO: data_mgmt]: data\PetImages\Dog\7743.jpg not of expected format
+[2022-07-07 12:09:59,096: INFO: data_mgmt]: data\PetImages\Dog\7969.jpg not of expected format
+[2022-07-07 12:09:59,216: INFO: data_mgmt]: data\PetImages\Dog\7989.jpg not of expected format
+[2022-07-07 12:10:00,590: INFO: data_mgmt]: data\PetImages\Dog\8126.jpg not of expected format
+[2022-07-07 12:10:01,254: INFO: data_mgmt]: data\PetImages\Dog\8194.jpg not of expected format
+[2022-07-07 12:10:02,315: INFO: data_mgmt]: data\PetImages\Dog\8364.jpg not of expected format
+[2022-07-07 12:10:03,305: INFO: data_mgmt]: data\PetImages\Dog\8521.jpg not of expected format
+[2022-07-07 12:10:03,502: INFO: data_mgmt]: data\PetImages\Dog\8557.jpg not of expected format
+[2022-07-07 12:10:03,559: INFO: data_mgmt]: data\PetImages\Dog\8563.jpg not of expected format
+[2022-07-07 12:10:04,042: INFO: data_mgmt]: data\PetImages\Dog\8641.jpg not of expected format
+[2022-07-07 12:10:04,384: INFO: data_mgmt]: data\PetImages\Dog\8693.jpg not of expected format
+[2022-07-07 12:10:04,525: INFO: data_mgmt]: data\PetImages\Dog\8715.jpg not of expected format
+[2022-07-07 12:10:04,610: INFO: data_mgmt]: data\PetImages\Dog\8730.jpg not of expected format
+[2022-07-07 12:10:06,364: INFO: data_mgmt]: data\PetImages\Dog\9026.jpg not of expected format
+[2022-07-07 12:10:06,464: INFO: data_mgmt]: data\PetImages\Dog\9043.jpg not of expected format
+[2022-07-07 12:10:06,730: INFO: data_mgmt]: data\PetImages\Dog\9078.jpg not of expected format
+[2022-07-07 12:10:07,385: INFO: data_mgmt]: data\PetImages\Dog\9145.jpg not of expected format
+[2022-07-07 12:10:07,755: INFO: data_mgmt]: data\PetImages\Dog\9188.jpg not of expected format
+[2022-07-07 12:10:09,205: INFO: data_mgmt]: data\PetImages\Dog\9367.jpg not of expected format
+[2022-07-07 12:10:09,495: INFO: data_mgmt]: data\PetImages\Dog\9414.jpg not of expected format
+[2022-07-07 12:10:10,025: INFO: data_mgmt]: data\PetImages\Dog\9500.jpg not of expected format
+[2022-07-07 12:10:10,361: INFO: data_mgmt]: data\PetImages\Dog\9556.jpg not of expected format
+[2022-07-07 12:10:10,885: INFO: data_mgmt]: data\PetImages\Dog\9640.jpg not of expected format
+[2022-07-07 12:10:10,905: INFO: data_mgmt]: data\PetImages\Dog\9643.jpg not of expected format
+[2022-07-07 12:10:12,272: INFO: data_mgmt]: data\PetImages\Dog\9851.jpg not of expected format
+[2022-07-07 12:10:12,935: INFO: data_mgmt]: data\PetImages\Dog\9961.jpg not of expected format
+[2022-07-07 12:10:12,985: INFO: data_mgmt]: data\PetImages\Dog\9967.jpg not of expected format
+[2022-07-07 12:10:13,335: INFO: data_mgmt]: data\PetImages\Dog\Thumbs.db not of expected format
+[2022-07-07 12:10:13,385: INFO: data_mgmt]: moved bad file from data\PetImages\Dog\Thumbs.db to data\bad_data\Thumbs.db
+[2022-07-07 12:10:13,385: ERROR: data_mgmt]: cannot identify image file 'data\\PetImages\\Dog\\Thumbs.db'
+Traceback (most recent call last):
+  File "d:\mlops\mlflow-cnn-app-fsds\src\utils\data_mgmt.py", line 22, in validate_image
+    img = Image.open(path_to_img)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\PIL\Image.py", line 3148, in open
+    "cannot identify image file %r" % (filename if filename else fp)
+PIL.UnidentifiedImageError: cannot identify image file 'data\\PetImages\\Dog\\Thumbs.db'
+[2022-07-07 12:10:13,386: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
+[2022-07-07 13:14:32,901: INFO: stage_02_base_model_creation]: 
+********************
+[2022-07-07 13:14:32,901: INFO: stage_02_base_model_creation]: >>>>> stage BASE MODEL CREATION started <<<<<
+[2022-07-07 13:14:32,902: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-07 13:14:32,903: ERROR: stage_02_base_model_creation]: 'params'
+Traceback (most recent call last):
+  File "src/stage_02_base_model_creation.py", line 67, in <module>
+    main(config_path=parsed_args.config)
+  File "src/stage_02_base_model_creation.py", line 25, in main
+    params = config["params"]
+KeyError: 'params'
+[2022-07-07 13:15:39,231: INFO: stage_02_base_model_creation]: 
+********************
+[2022-07-07 13:15:39,231: INFO: stage_02_base_model_creation]: >>>>> stage BASE MODEL CREATION started <<<<<
+[2022-07-07 13:15:39,233: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-07 13:15:39,233: ERROR: stage_02_base_model_creation]: 'params'
+Traceback (most recent call last):
+  File "src/stage_02_base_model_creation.py", line 67, in <module>
+    main(config_path=parsed_args.config)
+  File "src/stage_02_base_model_creation.py", line 25, in main
+    params = config["params"]
+KeyError: 'params'
+[2022-07-07 13:27:50,215: INFO: stage_02_base_model_creation]: 
+********************
+[2022-07-07 13:27:50,215: INFO: stage_02_base_model_creation]: >>>>> stage BASE MODEL CREATION started <<<<<
+[2022-07-07 13:27:50,216: ERROR: stage_02_base_model_creation]: while scanning a simple key
+  in "configs/config.yaml", line 10, column 3
+could not find expected ':'
+  in "configs/config.yaml", line 14, column 3
+Traceback (most recent call last):
+  File "src/stage_02_base_model_creation.py", line 67, in <module>
+    main(config_path=parsed_args.config)
+  File "src/stage_02_base_model_creation.py", line 23, in main
+    config = read_yaml(config_path)
+  File "d:\mlops\mlflow-cnn-app-fsds\src\utils\common.py", line 12, in read_yaml
+    content = yaml.safe_load(yaml_file)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\scanner.py", line 292, in stale_possible_simple_keys
+    "could not find expected ':'", self.get_mark())
+yaml.scanner.ScannerError: while scanning a simple key
+  in "configs/config.yaml", line 10, column 3
+could not find expected ':'
+  in "configs/config.yaml", line 14, column 3
+[2022-07-07 13:28:42,273: INFO: stage_02_base_model_creation]: 
+********************
+[2022-07-07 13:28:42,273: INFO: stage_02_base_model_creation]: >>>>> stage BASE MODEL CREATION started <<<<<
+[2022-07-07 13:28:42,274: ERROR: stage_02_base_model_creation]: while scanning a simple key
+  in "configs/config.yaml", line 10, column 3
+could not find expected ':'
+  in "configs/config.yaml", line 11, column 3
+Traceback (most recent call last):
+  File "src/stage_02_base_model_creation.py", line 67, in <module>
+    main(config_path=parsed_args.config)
+  File "src/stage_02_base_model_creation.py", line 23, in main
+    config = read_yaml(config_path)
+  File "d:\mlops\mlflow-cnn-app-fsds\src\utils\common.py", line 12, in read_yaml
+    content = yaml.safe_load(yaml_file)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\scanner.py", line 292, in stale_possible_simple_keys
+    "could not find expected ':'", self.get_mark())
+yaml.scanner.ScannerError: while scanning a simple key
+  in "configs/config.yaml", line 10, column 3
+could not find expected ':'
+  in "configs/config.yaml", line 11, column 3
+[2022-07-07 13:31:18,206: INFO: stage_02_base_model_creation]: 
+********************
+[2022-07-07 13:31:18,206: INFO: stage_02_base_model_creation]: >>>>> stage BASE MODEL CREATION started <<<<<
+[2022-07-07 13:31:18,207: ERROR: stage_02_base_model_creation]: while scanning a simple key
+  in "configs/config.yaml", line 10, column 3
+could not find expected ':'
+  in "configs/config.yaml", line 11, column 3
+Traceback (most recent call last):
+  File "src/stage_02_base_model_creation.py", line 67, in <module>
+    main(config_path=parsed_args.config)
+  File "src/stage_02_base_model_creation.py", line 23, in main
+    config = read_yaml(config_path)
+  File "d:\mlops\mlflow-cnn-app-fsds\src\utils\common.py", line 12, in read_yaml
+    content = yaml.safe_load(yaml_file)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\scanner.py", line 292, in stale_possible_simple_keys
+    "could not find expected ':'", self.get_mark())
+yaml.scanner.ScannerError: while scanning a simple key
+  in "configs/config.yaml", line 10, column 3
+could not find expected ':'
+  in "configs/config.yaml", line 11, column 3
+[2022-07-07 13:31:55,758: INFO: stage_02_base_model_creation]: 
+********************
+[2022-07-07 13:31:55,758: INFO: stage_02_base_model_creation]: >>>>> stage BASE MODEL CREATION started <<<<<
+[2022-07-07 13:31:55,759: ERROR: stage_02_base_model_creation]: while scanning a simple key
+  in "configs/config.yaml", line 10, column 3
+could not find expected ':'
+  in "configs/config.yaml", line 11, column 3
+Traceback (most recent call last):
+  File "src/stage_02_base_model_creation.py", line 67, in <module>
+    main(config_path=parsed_args.config)
+  File "src/stage_02_base_model_creation.py", line 23, in main
+    config = read_yaml(config_path)
+  File "d:\mlops\mlflow-cnn-app-fsds\src\utils\common.py", line 12, in read_yaml
+    content = yaml.safe_load(yaml_file)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\site-packages\yaml\scanner.py", line 292, in stale_possible_simple_keys
+    "could not find expected ':'", self.get_mark())
+yaml.scanner.ScannerError: while scanning a simple key
+  in "configs/config.yaml", line 10, column 3
+could not find expected ':'
+  in "configs/config.yaml", line 11, column 3
+[2022-07-07 13:32:37,083: INFO: stage_02_base_model_creation]: 
+********************
+[2022-07-07 13:32:37,083: INFO: stage_02_base_model_creation]: >>>>> stage BASE MODEL CREATION started <<<<<
+[2022-07-07 13:32:37,085: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-07 13:32:37,085: ERROR: stage_02_base_model_creation]: 'params'
+Traceback (most recent call last):
+  File "src/stage_02_base_model_creation.py", line 67, in <module>
+    main(config_path=parsed_args.config)
+  File "src/stage_02_base_model_creation.py", line 25, in main
+    params = config["params"]
+KeyError: 'params'
