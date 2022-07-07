@@ -4,7 +4,6 @@ import shutil
 from tqdm import tqdm
 import logging
 from src.utils.common import read_yaml, create_directories, unzip_file
-#from src.utils.data_mgmt import validate_image
 import random
 import urllib.request as req
 
@@ -22,6 +21,7 @@ def main(config_path):
     ## read config files
     config = read_yaml(config_path)
     URL = config["data"]["source_url"]
+    print(URL)
     local_dir = config["data"]["local_dir"]
     create_directories([local_dir])
 
@@ -38,13 +38,10 @@ def main(config_path):
 
     # Unzip ops
     unzip_data_dir = config["data"]["unzip_data_dir"]
-    if not os.path.exists(unzip_data_dir):
-        create_directories([unzip_data_dir])
-        unzip_file(source=data_file_path, dest=unzip_data_dir)
-    else:
-        logging.info(f"data already extracted")
-    # validating data
-    #validate_image(config)
+    create_directories([unzip_data_dir])
+    unzip_file(source=data_file_path, dest=unzip_data_dir)
+    
+
 
 if __name__ == '__main__':
     args = argparse.ArgumentParser()

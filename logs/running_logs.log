@@ -1,162 +1,10 @@
-[2022-07-06 12:07:40,703: INFO: stage_00_template]: 
+[2022-07-07 11:32:50,984: INFO: stage_01_get_data]: 
 ********************
-[2022-07-06 12:07:40,703: INFO: stage_00_template]: >>>>> stage STAGE_NAME started <<<<<
-[2022-07-06 12:07:40,710: INFO: common]: yaml file: configs/config.yaml loaded successfully
-[2022-07-06 12:07:40,710: INFO: common]: yaml file: params.yaml loaded successfully
-[2022-07-06 12:07:40,710: INFO: stage_00_template]: >>>>> stage STAGE_NAME completed!<<<<<
-
-[2022-07-06 20:13:00,348: INFO: stage_01_get_data]: 
-********************
-[2022-07-06 20:13:00,348: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
-[2022-07-06 20:13:00,350: INFO: common]: yaml file: configs/config.yaml loaded successfully
-[2022-07-06 20:13:00,351: INFO: common]: created directory at: data
-[2022-07-06 20:13:00,351: INFO: stage_01_get_data]: downloading started...
-[2022-07-06 20:13:03,006: ERROR: stage_01_get_data]: HTTP Error 404: Not Found
-Traceback (most recent call last):
-  File "src/stage_01_get_data.py", line 57, in <module>
-    main(config_path=parsed_args.config)
-  File "src/stage_01_get_data.py", line 34, in main
-    filename, headers = req.urlretrieve(URL, data_file_path)
-  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\urllib\request.py", line 247, in urlretrieve
-    with contextlib.closing(urlopen(url, data)) as fp:
-  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\urllib\request.py", line 222, in urlopen
-    return opener.open(url, data, timeout)
-  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\urllib\request.py", line 531, in open
-    response = meth(req, response)
-  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\urllib\request.py", line 641, in http_response
-    'http', request, response, code, msg, hdrs)
-  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\urllib\request.py", line 569, in error
-    return self._call_chain(*args)
-  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\urllib\request.py", line 503, in _call_chain
-    result = func(*args)
-  File "D:\MLops\MLflow-CNN-app-FSDS\env\lib\urllib\request.py", line 649, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 404: Not Found
-[2022-07-06 20:14:59,219: INFO: stage_01_get_data]: 
-********************
-[2022-07-06 20:14:59,219: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
-[2022-07-06 20:14:59,221: INFO: common]: yaml file: configs/config.yaml loaded successfully
-[2022-07-06 20:14:59,222: INFO: common]: created directory at: data
-[2022-07-06 20:14:59,222: INFO: stage_01_get_data]: downloading started...
-[2022-07-06 20:14:59,951: INFO: stage_01_get_data]: filename:data\data.zip created with info 
-Cache-Control: no-cache, no-store
-Pragma: no-cache
-Content-Type: text/html
-Expires: -1
-P3P: CP="ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI"
-CorrelationVector: /8UclcM0U0G0FGsg.1.0
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
-Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
-Access-Control-Allow-Credentials: true
-X-Frame-Options: SAMEORIGIN
-x-sitemuse-origin: Azure
-X-Azure-Ref: 065/FYgAAAAAoUur6CtZjRbv3gdZHzpPpU0dFRURHRTA4MjAAMWIyYjIyYzEtY2IwYy00OTUwLTg4NzktZDIxMmYyYWM1YTRi
-X-EdgeConnect-MidMile-RTT: 66
-X-EdgeConnect-Origin-MEX-Latency: 274
-Vary: Accept-Encoding
-Date: Wed, 06 Jul 2022 14:44:59 GMT
-Transfer-Encoding: chunked
-Connection: close
-Connection: Transfer-Encoding
-Set-Cookie: MS-CV=/8UclcM0U0G0FGsg.1; domain=.microsoft.com; expires=Thu, 07-Jul-2022 14:44:59 GMT; path=/;samesite=None; secure
-TLS_version: tls1.3
-Strict-Transport-Security: max-age=31536000
-X-RTag: SMAPROD
-
-
-[2022-07-06 20:14:59,951: ERROR: stage_01_get_data]: 'unzip_data_dir'
-Traceback (most recent call last):
-  File "src/stage_01_get_data.py", line 57, in <module>
-    main(config_path=parsed_args.config)
-  File "src/stage_01_get_data.py", line 40, in main
-    unzip_data_dir = config["data"]["unzip_data_dir"]
-KeyError: 'unzip_data_dir'
-[2022-07-06 20:18:42,703: INFO: stage_01_get_data]: 
-********************
-[2022-07-06 20:18:42,703: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
-[2022-07-06 20:18:42,704: INFO: common]: yaml file: configs/config.yaml loaded successfully
-[2022-07-06 20:18:42,705: INFO: common]: created directory at: data
-[2022-07-06 20:18:42,705: INFO: stage_01_get_data]: filename:data.zip already present
-[2022-07-06 20:18:42,705: INFO: stage_01_get_data]: data already extracted
-[2022-07-06 20:18:42,705: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
-
-[2022-07-06 20:19:58,960: INFO: stage_01_get_data]: 
-********************
-[2022-07-06 20:19:58,960: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
-[2022-07-06 20:19:58,962: INFO: common]: yaml file: configs/config.yaml loaded successfully
-[2022-07-06 20:19:58,962: INFO: common]: created directory at: data
-[2022-07-06 20:19:58,962: INFO: stage_01_get_data]: downloading started...
-[2022-07-06 20:19:59,915: INFO: stage_01_get_data]: filename:data\data.zip created with info 
-Cache-Control: no-cache, no-store
-Pragma: no-cache
-Content-Type: text/html
-Expires: -1
-P3P: CP="ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI"
-CorrelationVector: jUkhcgZUEU+ZYjdA.1.0
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
-Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
-Access-Control-Allow-Credentials: true
-X-Frame-Options: SAMEORIGIN
-x-sitemuse-origin: Azure
-X-Azure-Ref: 0F6HFYgAAAACA0K8WR2IHTb3I8Lki/7uQU0dFRURHRTA4MTMAMWIyYjIyYzEtY2IwYy00OTUwLTg4NzktZDIxMmYyYWM1YTRi
-X-EdgeConnect-MidMile-RTT: 66
-X-EdgeConnect-Origin-MEX-Latency: 351
-Vary: Accept-Encoding
-Date: Wed, 06 Jul 2022 14:49:59 GMT
-Transfer-Encoding: chunked
-Connection: close
-Connection: Transfer-Encoding
-Set-Cookie: MS-CV=jUkhcgZUEU+ZYjdA.1; domain=.microsoft.com; expires=Thu, 07-Jul-2022 14:49:59 GMT; path=/;samesite=None; secure
-TLS_version: tls1.3
-Strict-Transport-Security: max-age=31536000
-X-RTag: SMAPROD
-
-
-[2022-07-06 20:19:59,916: INFO: stage_01_get_data]: data already extracted
-[2022-07-06 20:19:59,916: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
-
-[2022-07-06 20:42:07,869: INFO: stage_01_get_data]: 
-********************
-[2022-07-06 20:42:07,869: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
-[2022-07-06 20:42:07,869: INFO: common]: yaml file: configs/config.yaml loaded successfully
-[2022-07-06 20:42:07,885: INFO: common]: created directory at: data
-[2022-07-06 20:42:07,885: INFO: stage_01_get_data]: downloading started...
-[2022-07-06 20:42:08,927: INFO: stage_01_get_data]: filename:data\data.zip created with info 
-Cache-Control: no-cache, no-store
-Pragma: no-cache
-Content-Type: text/html
-Expires: -1
-P3P: CP="ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI"
-CorrelationVector: rGk4jVCcZEyE3fjo.1.0
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
-Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
-Access-Control-Allow-Credentials: true
-X-Frame-Options: SAMEORIGIN
-x-sitemuse-origin: Azure
-X-Azure-Ref: 0SKbFYgAAAABD2ijnL0kdS7nr76Dz5DJVU0dFRURHRTA4MDgAMWIyYjIyYzEtY2IwYy00OTUwLTg4NzktZDIxMmYyYWM1YTRi
-X-EdgeConnect-MidMile-RTT: 70
-X-EdgeConnect-Origin-MEX-Latency: 393
-Vary: Accept-Encoding
-Date: Wed, 06 Jul 2022 15:12:08 GMT
-Transfer-Encoding: chunked
-Connection: close
-Connection: Transfer-Encoding
-Set-Cookie: MS-CV=rGk4jVCcZEyE3fjo.1; domain=.microsoft.com; expires=Thu, 07-Jul-2022 15:12:08 GMT; path=/;samesite=None; secure
-TLS_version: tls1.3
-Strict-Transport-Security: max-age=31536000
-X-RTag: SMAPROD
-
-
-[2022-07-06 20:42:08,927: INFO: stage_01_get_data]: data already extracted
-[2022-07-06 20:42:08,927: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
-
-[2022-07-06 20:43:01,131: INFO: stage_01_get_data]: 
-********************
-[2022-07-06 20:43:01,131: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
-[2022-07-06 20:43:01,131: INFO: common]: yaml file: configs/config.yaml loaded successfully
-[2022-07-06 20:43:01,131: INFO: common]: created directory at: data
-[2022-07-06 20:43:01,131: INFO: stage_01_get_data]: downloading started...
-[2022-07-06 20:45:16,472: INFO: stage_01_get_data]: filename:data\data.zip created with info 
+[2022-07-07 11:32:50,984: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-07-07 11:32:50,992: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-07 11:32:50,992: INFO: common]: created directory at: data
+[2022-07-07 11:32:50,992: INFO: stage_01_get_data]: downloading started...
+[2022-07-07 11:35:02,045: INFO: stage_01_get_data]: filename:data\data.zip created with info 
 Content-Type: application/octet-stream
 Accept-Ranges: bytes
 Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
@@ -164,10 +12,12 @@ x-ms-blob-content-md5: 4TekUHNw2UJGm20meiTqBA==
 Last-Modified: Mon, 09 May 2022 20:42:07 GMT
 ETag: "0x8DA31FC621E01C4"
 Content-Length: 824887076
-Date: Wed, 06 Jul 2022 15:13:01 GMT
+Date: Thu, 07 Jul 2022 06:02:51 GMT
 Connection: close
 
 
-[2022-07-06 20:45:16,472: INFO: stage_01_get_data]: data already extracted
-[2022-07-06 20:45:16,472: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+[2022-07-07 11:35:02,046: INFO: common]: created directory at: data
+[2022-07-07 11:35:02,046: INFO: common]: extraction started...
+[2022-07-07 11:35:23,253: INFO: common]: extracted data\data.zip to data
+[2022-07-07 11:35:23,264: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
 
